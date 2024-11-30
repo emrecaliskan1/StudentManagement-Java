@@ -1,12 +1,12 @@
 public class Student {
     private String name;
-    private int studentId;
+    private int id;
     private String email;
 
 
     public Student(String name,int id, String email) {
         this.name=name;
-        this.studentId = id;
+        this.id = id;
         this.email = email;
     }
 
@@ -19,11 +19,11 @@ public class Student {
     }
 
     public int getStudentId() {
-        return studentId;
+        return id;
     }
 
     public void setStudentId(int studentId) {
-        this.studentId = studentId;
+        this.id = studentId;
     }
 
     public String getEmail() {
@@ -37,7 +37,7 @@ public class Student {
     @Override
     public String toString(){
         return "Student {" +
-                "id= " + studentId + ' ' +
+                "id= " + id + ' ' +
                 "name= " + name + ' ' +
                 "email= " + email + '}';
     }
